@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Feedback">
+
+    <RelativeLayout
+
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/aboutback"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/back"
+            android:padding="20dp"
+
+            app:srcCompat="@drawable/arrowback" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/orbitronregular"
+            android:gravity="center"
+            android:text="Feedback"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingBottom="16dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/orbitronregular"
+                android:text="@string/hacknovation_2_0"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/share_your_experience_with_giet_university"
+                android:textColor="#8A8A8A"
+                android:textSize="13sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                app:cardCornerRadius="24dp"
+                app:strokeColor="@color/hint_text"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F4F6FA"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="@color/primary"
+                        android:fontFamily="@font/orbitronregular"
+                        android:text="@string/overall_experience"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <RatingBar
+                        android:id="@+id/ratingOverall"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:scaleX="2.2"
+                        android:scaleY="2.2"
+                        android:progressTint="@color/persianblue"
+                        android:secondaryProgressTint="@color/persianblue"
+                       />
+
+
+                    <TextView
+                        android:id="@+id/txtOverallText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/poppinsregular"
+                     
+                        android:textColor="#1A3D8F"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/mentorship_guidance"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+
+                        android:focusableInTouchMode="true"
+                        android:id="@+id/m1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_1"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:focusableInTouchMode="true"
+                        android:id="@+id/m2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_2"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m3"
+                        android:focusableInTouchMode="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_3"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:focusableInTouchMode="true"
+                        android:id="@+id/m4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_4"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:focusableInTouchMode="true"
+                        android:id="@+id/m5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_5"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppinsregular"
+
+                android:text="@string/food_amp_refreshments"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:focusableInTouchMode="true"
+                        android:id="@+id/m11"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                         android:text="@string/_1"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m21"
+                        android:focusableInTouchMode="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                       android:text="@string/_2"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m31"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:focusableInTouchMode="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_3"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m41"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:focusableInTouchMode="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_4"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m51"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:focusableInTouchMode="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_5"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/event_organization"
+                android:fontFamily="@font/poppinsregular"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false" android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m12"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:focusableInTouchMode="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                         android:text="@string/_1"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m22"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:focusableInTouchMode="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                       android:text="@string/_2"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m32"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:focusableInTouchMode="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_3"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m42"
+                        android:focusableInTouchMode="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_4"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m52"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:focusableInTouchMode="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_5"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/technical_support"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m13"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                         android:text="@string/_1"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m23"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:focusableInTouchMode="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                       android:text="@string/_2"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m33"
+                        android:focusableInTouchMode="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_3"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m43"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_4"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m53"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:focusableInTouchMode="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_5"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/app_platfrom_amp_website"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m14"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                         android:text="@string/_1"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m24"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:focusableInTouchMode="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                       android:text="@string/_2"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m34"
+                        android:focusableInTouchMode="true"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_3"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m44"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/_4"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foregroundGravity="center">
+
+                    <TextView
+                        android:id="@+id/m54"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:focusableInTouchMode="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rating_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+
+                        android:text="@string/_5"
+                        android:textColor="@color/rating_text" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/additional_comments"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_comment"
+                android:fontFamily="@font/poppinsregular"
+                android:gravity="top"
+                android:hint="@string/tell_us_what_we_can_improve_for_hacknovation_3_0"
+                android:importantForAutofill="no"
+                android:minHeight="120dp"
+                android:padding="12dp"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                android:fontFamily="@font/orbitronregular"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_button1"
+                android:text="@string/submit_feedback"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

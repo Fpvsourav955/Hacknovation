@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1">
+        <item android:id="@+id/Faculity1"
+            android:title="@string/faculty_coordinators"
+            android:icon="@drawable/faculity"/>
+        <item android:id="@+id/Team"
+            android:title="@string/hacknovation_team"
+            android:icon="@drawable/members"/>
+        <item android:id="@+id/Devteam"
+            android:title="@string/devteam"
+            android:icon="@drawable/dev"/>
+
+
+    </group>
+    <group android:id="@+id/group2">
+        <item android:id="@+id/AboutHacknovation"
+            android:title="@string/about_hacknocation"
+            android:icon="@drawable/info"/>
+        <item android:id="@+id/ReportBug"
+            android:title="@string/report_bug"
+            android:icon="@drawable/bug"/>
+        <item android:id="@+id/Feedback"
+            android:title="@string/feedback"
+            android:icon="@drawable/feedback"/>
+    </group>
+    <group android:id="@+id/group3">
+        <item android:id="@+id/share"
+            android:title="@string/share"
+            android:icon="@drawable/share"/>
+        <item android:id="@+id/contactus"
+            android:title="@string/contact_us"
+            android:icon="@drawable/contact"/>
+
+    </group>
+
+    <group android:id="@+id/group4">
+        <item android:id="@+id/logout"
+            android:iconTint="#F44336"
+            android:title="Log Out"
+            android:icon="@drawable/logout"/>
+    </group>
+</menu>

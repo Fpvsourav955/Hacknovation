@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActivityFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/yourNestedScrollId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/userimage"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+
+                    android:background="@drawable/bg_circle"
+                    android:importantForAccessibility="no"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_marginStart="12dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:fontFamily="@font/poppinsregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/giet_university"
+                        android:textSize="11sp"
+                        android:textColor="#7A869A"/>
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:fontFamily="@font/poppinsregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hi_rohan"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#0D1B5E"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="32dp"
+                    android:layout_height="32dp">
+
+                    <ImageView
+                        android:id="@+id/notificationIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_notification"
+                        android:background="@drawable/bg_circle"
+                        android:padding="6dp"
+                        app:tint="#0D1B5E"/>
+
+                    <View
+                        android:id="@+id/notificationDot"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|top"
+                        android:background="@drawable/bg_red_dot"
+                        android:visibility="gone"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/activity_hub"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#0D1B5E"
+                android:fontFamily="@font/orbitronregular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_height="wrap_content"
+                android:text="@string/access_your_hackathon_essentials"
+                android:textSize="14sp"
+                android:textColor="#7A869A"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="20dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/attendance"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    app:cardCornerRadius="16dp"
+
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <LinearLayout
+                        android:id="@+id/C"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/attendenceqr"
+                            android:background="@drawable/bg_icon_circle"
+                            android:padding="8dp"
+                            app:tint="@color/persianblue"/>
+
+                        <TextView
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:text="@string/attendance"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#0D1B5E"/>
+
+                        <TextView
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/attendance_sheet"
+                            android:textSize="12sp"
+                            android:textColor="#7A869A"/>
+                        <TextView
+                            android:id="@+id/tvAttendanceStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/checking"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="14sp"
+                           />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/food"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    app:cardCornerRadius="16dp"
+
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:importantForAccessibility="no" android:src="@drawable/food"
+                            android:background="@drawable/bg_icon_circle"
+                            android:padding="8dp"
+                            app:tint="@color/persianblue"/>
+
+                        <TextView
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:text="@string/food_amp_snacks"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#0D1B5E"/>
+
+                        <TextView
+                            android:id="@+id/timestring"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/lunch_1_00_pm"
+                            android:textSize="12sp"
+                            android:textColor="#7A869A"/>
+
+                        <TextView
+                            android:id="@+id/statusfood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#5C6BC0"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="16dp">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/problempdf"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    app:cardCornerRadius="16dp"
+
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:importantForAccessibility="no" android:src="@drawable/psd"
+                            android:background="@drawable/bg_icon_circle"
+                            android:padding="8dp"
+                            app:tint="@color/persianblue"/>
+
+                        <TextView
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/problem_statements"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#0D1B5E"/>
+
+                        <TextView
+                            android:id="@+id/coupons"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/_20_ps_available"
+                            android:textSize="12sp"
+                            android:textColor="#7A869A"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/pdfopen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    app:cardCornerRadius="16dp"
+
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/ic_calender"
+                            android:background="@drawable/bg_icon_circle"
+                            android:padding="8dp"
+                            app:tint="@color/persianblue"/>
+
+                        <TextView
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/schedule"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#0D1B5E"/>
+
+                        <TextView
+                            android:id="@+id/schedulestatus"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/round_1_mentoring"
+                            android:textSize="12sp"
+                            android:textColor="#7A869A"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+
+
+<TextView
+    android:layout_marginTop="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/quick_updates"
+    android:fontFamily="@font/poppinsregular"
+    android:textStyle="bold"
+    android:textColor="@color/primary"
+    android:textSize="16sp"/>
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvUpdates"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:padding="8dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutSend"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp">
+
+                        <EditText
+                            android:importantForAutofill="no"
+                            android:inputType="textLongMessage"
+                            android:id="@+id/etMessage"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="50dp"
+                            android:hint="@string/type_update"
+                            android:padding="12dp"
+                            android:background="@drawable/input_background"/>
+
+                        <ImageView
+                            app:tint="@color/primary"
+                            android:id="@+id/btnSend"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_send"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+
+                android:layout_marginBottom="60dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#1A237E">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="24dp"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:fontFamily="@font/poppinsregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hackathon_prize_distribution"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:fontFamily="@font/poppinsregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/join_us_at_the_main_auditorium"
+                        android:textSize="14sp"
+                        android:textColor="#B3C5FF"/>
+
+                    <TextView
+                        android:fontFamily="@font/poppinsregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/live_now"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp"
+                        android:background="@drawable/bg_live_chip"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

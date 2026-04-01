@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginBottom="16dp">
+
+    <!-- Timeline Dot -->
+    <LinearLayout
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:gravity="top|center_horizontal">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/bg_circle1"/>
+
+    </LinearLayout>
+
+    <!-- Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:elevation="6dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="24dp"
+                    app:tint="@color/primary"
+                    android:layout_height="24dp"
+                    android:src="@drawable/hightea"/>
+                <TextView
+                    android:layout_marginStart="8dp"
+                    android:text="High Tea"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/orbitronregular"
+                    android:textColor="#1C2B5A"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=" 5:20 PM "
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="11sp"
+                    android:padding="6dp"
+                    android:textColor="#3B82F6"
+                    android:background="@drawable/bg_time"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/badaa_alu_chap_and_coffee_tea"
+                android:textColor="#6B7280"
+                android:textSize="13sp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/vegetarian"
+                    android:textSize="11sp"
+                    android:padding="4dp"
+                    android:textColor="#16A34A"
+                    android:background="@drawable/bg_tag_green"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/orbitronregular"
+                    android:gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hacknovation_2_0"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

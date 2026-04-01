@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1046843890242",
+    "firebase_url": "https://hacknovation-default-rtdb.firebaseio.com",
+    "project_id": "hacknovation",
+    "storage_bucket": "hacknovation.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046843890242:android:85aec2d2f996f828752bdb",
+        "android_client_info": {
+          "package_name": "com.sourav.hacknovation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046843890242-hk0va7tdm5vjm2407626lgua6uu6vmut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7i3zwCaY6So8sxR19QPWlHHanQKQ98HI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046843890242-hk0va7tdm5vjm2407626lgua6uu6vmut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

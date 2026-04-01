@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DevTeam">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+                <ImageView
+                    android:id="@+id/aboutback"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/back"
+                    android:padding="20dp"
+
+                    app:srcCompat="@drawable/arrowback" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Developers"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/orbitronregular"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/about_background"
+                    tools:ignore="TextSizeCheck">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/orbitronregular"
+                        android:padding="20dp"
+                        android:text="@string/sourav_kumar_pati"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        tools:ignore="VisualLintOverlap" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:paddingTop="48dp"
+                        android:fontFamily="@font/poppinsregular"
+                        android:text="Android Developer"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/moresourav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="#00000000"
+                        android:fontFamily="@font/orbitronregular"
+                        android:padding="20dp"
+                        android:text="MORE!"
+                        android:textColor="@color/black"
+                        tools:ignore="RelativeOverlap,DuplicateSpeakableTextCheck" />
+
+                    <ImageView
+                        android:id="@+id/souravgit"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:importantForAccessibility="no"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="16dp"
+                        android:src="@drawable/github2"
+                        tools:ignore="RtlSymmetry" />
+
+                    <ImageView
+                        android:id="@+id/souravlink"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="54dp"
+                        android:contentDescription="link"
+                        android:paddingBottom="16dp"
+                        android:src="@drawable/linkwdin2" />
+
+                    <ImageView
+                        android:id="@+id/souravinsta"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="100dp"
+                        android:importantForAccessibility="no"
+                        android:paddingBottom="16dp"
+                        android:src="@drawable/instagram1" />
+
+
+                </RelativeLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:civ_border_width="2dp"
+                    android:layout_marginEnd="6dp"
+                    app:civ_border_color="@color/primary"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/souravpati11"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/about_background"
+                    tools:ignore="TextSizeCheck">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/orbitronregular"
+                        android:padding="20dp"
+                        android:text="@string/subrata_dhibar"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:paddingTop="48dp"
+                        android:text="Web Developer"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/moreanshuman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="#00000000"
+                        android:fontFamily="@font/orbitronregular"
+                        android:padding="20dp"
+                        android:text="MORE!"
+                        android:textColor="@color/black"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:id="@+id/anshumangit"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:importantForAccessibility="no"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="16dp"
+                        android:src="@drawable/github2"
+                        tools:ignore="RtlSymmetry" />
+
+                    <ImageView
+                        android:id="@+id/anshumanlink"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="54dp"
+                        android:importantForAccessibility="no"
+                        android:paddingBottom="16dp"
+                        android:src="@drawable/linkwdin2" />
+
+                    <ImageView
+                        android:id="@+id/anshumaninsta"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="100dp"
+                        android:importantForAccessibility="no"
+                        android:paddingBottom="16dp"
+                        android:src="@drawable/instagram1" />
+
+
+                </RelativeLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:civ_border_width="2dp"
+                    android:layout_marginEnd="6dp"
+
+                    app:civ_border_color="@color/primary"
+
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/subrata"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/about_background"
+                    tools:ignore="TextSizeCheck">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/orbitronregular"
+                        android:padding="20dp"
+                        android:text="@string/supriyo_dawn"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        tools:ignore="VisualLintOverlap" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:paddingTop="48dp"
+                        android:text="UI/UX Designer"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/moremukesh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="#00000000"
+                        android:fontFamily="@font/orbitronregular"
+                        android:padding="20dp"
+                        android:text="MORE!"
+                        android:textColor="@color/black"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:id="@+id/mukeshgit"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:importantForAccessibility="no"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="16dp"
+                        android:src="@drawable/github2"
+                        tools:ignore="RtlSymmetry" />
+
+                    <ImageView
+                        android:id="@+id/mukeshlink"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="54dp"
+                        android:importantForAccessibility="no"
+                        android:paddingBottom="16dp"
+                        android:src="@drawable/linkwdin2" />
+
+                    <ImageView
+                        android:id="@+id/mukeshinsta"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="100dp"
+                        android:importantForAccessibility="no"
+                        android:paddingBottom="16dp"
+                        android:src="@drawable/instagram1" />
+
+
+                </RelativeLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="6dp"
+                    android:src="@drawable/supriyo"
+                    app:civ_border_color="@color/primary"
+                    app:civ_border_width="2dp"
+                    tools:ignore="ImageContrastCheck" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

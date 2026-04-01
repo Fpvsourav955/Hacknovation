@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:context=".EditTeamActivity"
+    android:id="@+id/main"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:paddingHorizontal="16dp">
+
+            <LinearLayout
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/arrowback"
+                    android:contentDescription="@string/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/back"
+                    android:textColor="#1F2937"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppinsregular" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/add_new_team"
+                android:textColor="#1F2937"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:fontFamily="@font/orbitronregular" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+
+                    android:importantForAccessibility="no"
+                    app:tint="@color/primary"
+                    android:src="@drawable/info"
+
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/basic_information"
+                    android:textColor="#1F2937"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    android:fontFamily="@font/poppinsregular" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEAM NAME"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="#1F2937"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:layout_marginBottom="8dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+
+                android:id="@+id/etTeamName"
+                android:autofillHints="no"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_background"
+                android:hint="@string/e_g_team_tejas"
+
+                android:textColor="#1F2937"
+                android:textColorHint="#9CA3AF"
+                android:textSize="14sp"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="16dp"
+                tools:ignore="TextFields" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false" android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/theme"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textColor="#1F2937"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.05"
+                        android:layout_marginBottom="8dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp">
+
+                        <Spinner
+                            android:id="@+id/spinnerTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/input_background"
+                            android:paddingHorizontal="12dp"
+                            android:spinnerMode="dropdown"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:fontFamily="@font/poppinsregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/problem_id_ps_id"
+                        android:textColor="#1F2937"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.05"
+                        android:layout_marginBottom="8dp" />
+
+                    <EditText
+                        android:id="@+id/etProjectId"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/input_background"
+                        android:hint="@string/hkxx"
+                        android:textColor="#1F2937"
+                        android:textColorHint="#9CA3AF"
+                        android:textSize="14sp"
+                        android:paddingHorizontal="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    app:tint="@color/primary"
+                    android:src="@drawable/team"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/team_leader_details"
+                    android:textColor="#1F2937"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    android:fontFamily="@font/poppinsregular" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name"
+                android:textColor="#1F2937"
+                android:textSize="11sp"
+                android:fontFamily="@font/poppinsregular"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:importantForAutofill="no"
+                android:autofillHints="no"
+                android:id="@+id/etLeaderName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/poppinsregular"
+                android:background="@drawable/input_background"
+                android:hint="@string/enter_leader_name"
+                android:textColor="#1F2937"
+                android:textColorHint="#9CA3AF"
+                android:textSize="14sp"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/roll_number"
+                android:textColor="#1F2937"
+                android:textSize="11sp"
+                android:fontFamily="@font/poppinsregular"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etRollNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="no"
+                android:importantForAutofill="no"
+                android:fontFamily="@font/poppinsregular"
+                android:background="@drawable/input_background"
+                android:hint="@string/e_g_23csexxx"
+                android:textColor="#1F2937"
+                android:textColorHint="#9CA3AF"
+                android:textSize="14sp"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="16dp"
+                tools:ignore="TextFields" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_address"
+                android:fontFamily="@font/poppinsregular"
+
+                android:textColor="#1F2937"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="no"
+
+                android:background="@drawable/input_background"
+                android:hint="@string/leader_giet_edu"
+                android:fontFamily="@font/poppinsregular"
+                android:importantForAutofill="no"
+                android:textColor="#1F2937"
+                android:textColorHint="#9CA3AF"
+                android:textSize="14sp"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="16dp" />
+
+
+            <TextView
+                android:fontFamily="@font/poppinsregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"
+                android:textColor="#1F2937"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:importantForAutofill="no"
+                android:background="@drawable/input_background"
+                android:hint="@string/_91_00000_00000"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="#1F2937"
+                android:textColorHint="#9CA3AF"
+                android:textSize="14sp"
+                android:inputType="phone"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:fontFamily="@font/poppinsregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColor="#1F2937"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerGenderleader"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/gender_options"
+                android:background="@drawable/spinner_background"
+                android:padding="10dp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/ic_team"
+                    app:tint="@color/primary"
+                    android:contentDescription="@string/users" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/team_members"
+                    android:textColor="#1F2937"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinnerMemberCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingEnd="28dp"
+                    android:spinnerMode="dropdown"
+
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="12dp"
+                android:id="@+id/member1"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:text="@string/_1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/bg_circle_number"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/member_one"
+                        android:textColor="#6B7280"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.05"/>
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/member1name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:background="@drawable/input_background"
+                    android:hint="@string/name"
+                    android:textColorHint="#9CA3AF"
+                    android:textColor="#1F2937"
+                    android:textSize="15sp"
+                    android:padding="16dp"
+                    android:fontFamily="sans-serif"
+                    android:inputType="textPersonName"
+                    android:layout_marginBottom="12dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/member1roll"
+                        android:layout_width="0dp"
+                        android:importantForAutofill="no"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_background"
+                        android:hint="@string/roll_no"
+                        android:textColorHint="#9CA3AF"
+                        android:textColor="#1F2937"
+                        android:textSize="15sp"
+                        android:padding="16dp"
+                        android:fontFamily="sans-serif"
+                        android:inputType="text"
+                        android:layout_marginEnd="8dp"/>
+
+                    <EditText
+                        android:id="@+id/member1email"
+                        android:layout_width="0dp"
+                        android:importantForAutofill="no"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_background"
+                        android:hint="@string/email"
+                        android:textColorHint="#9CA3AF"
+                        android:textColor="#1F2937"
+                        android:textSize="15sp"
+                        android:padding="16dp"
+                        android:fontFamily="sans-serif"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginStart="8dp"/>
+
+                </LinearLayout>
+                <TextView
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#1F2937"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    android:layout_marginBottom="8dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerGender1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:entries="@array/gender_options"
+                    android:background="@drawable/spinner_background"
+                    android:padding="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/member2"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp"
+                android:background="#FFFFFF">
+
+                <!-- Header with Icon and Title -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:text="@string/_2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/bg_circle_number"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/member_two"
+                        android:textColor="#6B7280"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.05"/>
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/member2name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:background="@drawable/input_background"
+                    android:hint="@string/name"
+                    android:textColorHint="#9CA3AF"
+                    android:textColor="#1F2937"
+                    android:textSize="15sp"
+                    android:padding="16dp"
+                    android:fontFamily="sans-serif"
+                    android:inputType="textPersonName"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Roll No and Email Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/member2roll"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:importantForAutofill="no"
+                        android:background="@drawable/input_background"
+                        android:hint="@string/roll_no"
+                        android:textColorHint="#9CA3AF"
+                        android:textColor="#1F2937"
+                        android:textSize="15sp"
+                        android:padding="16dp"
+                        android:fontFamily="sans-serif"
+                        android:inputType="text"
+                        android:layout_marginEnd="8dp"/>
+
+                    <EditText
+                        android:id="@+id/member2email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:importantForAutofill="no"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_background"
+                        android:hint="@string/email"
+                        android:textColorHint="#9CA3AF"
+                        android:textColor="#1F2937"
+                        android:textSize="15sp"
+                        android:padding="16dp"
+                        android:fontFamily="sans-serif"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginStart="8dp"/>
+
+                </LinearLayout>
+                <TextView
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#1F2937"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    android:layout_marginBottom="8dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerGender2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:entries="@array/gender_options"
+                    android:background="@drawable/spinner_background"
+                    android:padding="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/member3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <!-- Header with Icon and Title -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:text="@string/_3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/bg_circle_number"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/member_three"
+                        android:textColor="#6B7280"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.05"/>
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/member3name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_background"
+                    android:hint="@string/name"
+                    android:importantForAutofill="no"
+                    android:textColorHint="#9CA3AF"
+                    android:textColor="#1F2937"
+                    android:textSize="15sp"
+                    android:padding="16dp"
+                    android:fontFamily="sans-serif"
+                    android:inputType="textPersonName"
+                    android:layout_marginBottom="12dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/member3roll"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_background"
+                        android:hint="@string/roll_no"
+                        android:importantForAutofill="no"
+                        android:textColorHint="#9CA3AF"
+                        android:textColor="#1F2937"
+                        android:textSize="15sp"
+                        android:padding="16dp"
+                        android:fontFamily="sans-serif"
+                        android:inputType="text"
+                        android:layout_marginEnd="8dp"/>
+
+                    <EditText
+                        android:id="@+id/member3email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_background"
+                        android:hint="@string/email"
+                        android:importantForAutofill="no"
+                        android:textColorHint="#9CA3AF"
+                        android:textColor="#1F2937"
+                        android:textSize="15sp"
+                        android:padding="16dp"
+                        android:fontFamily="sans-serif"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginStart="8dp"/>
+
+                </LinearLayout>
+                <TextView
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#1F2937"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    android:layout_marginBottom="8dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerGender3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:entries="@array/gender_options"
+                    android:background="@drawable/spinner_background"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:fontFamily="@font/orbitronregular"
+            android:layout_margin="16dp"
+            android:id="@+id/btnCreateTeam"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="@string/update_team"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+
+            android:drawablePadding="8dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ManagmentFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
+
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="24dp"
+            android:elevation="6dp"
+            app:cardElevation="4dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/sriyaimgProfile"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/sriya"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="@color/primary"
+                    app:civ_border_width="1dp"
+                    android:contentDescription="@string/profile_image" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sriya Panigrahi"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Management"
+                        android:textAllCaps="true"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/orbitronregular"
+                        android:textColor="@color/persianblue"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        tools:ignore="SmallSp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/btnCall"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="6dp"
+                    android:src="@drawable/contact"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/call"/>
+
+                <ImageView
+                    android:id="@+id/btnMail"
+                    android:layout_width="36dp"
+                    app:tint="@color/primary"
+                    android:layout_height="36dp"
+                    android:padding="6dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_mail"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/mail"/>
+
+                <ImageView
+                    android:id="@+id/btnLinkedin"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/linkedin1"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/share"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="24dp"
+            android:elevation="6dp"
+            app:cardElevation="4dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/rajaimgProfile1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/raja"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="@color/primary"
+                    app:civ_border_width="1dp"
+                    android:contentDescription="@string/profile_image" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Raja Babu Sahu"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Management"
+                        android:textAllCaps="true"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/orbitronregular"
+                        android:textColor="@color/persianblue"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        tools:ignore="SmallSp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/btnCall1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="6dp"
+                    android:src="@drawable/contact"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/call"/>
+
+                <ImageView
+                    android:id="@+id/btnMail1"
+                    android:layout_width="36dp"
+                    app:tint="@color/primary"
+                    android:layout_height="36dp"
+                    android:padding="6dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_mail"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/mail"/>
+
+                <ImageView
+                    android:id="@+id/btnLinkedin1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/linkedin1"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/share"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="24dp"
+            android:elevation="6dp"
+            app:cardElevation="4dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ayushoimgProfile"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ayush"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="@color/primary"
+                    app:civ_border_width="1dp"
+                    android:contentDescription="@string/profile_image" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ayush Kumar Biswal"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txtRole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Management"
+                        android:textAllCaps="true"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/orbitronregular"
+                        android:textColor="@color/persianblue"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        tools:ignore="SmallSp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/btnCall2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="6dp"
+                    android:src="@drawable/contact"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/call"/>
+
+                <ImageView
+                    android:id="@+id/btnMail2"
+                    android:layout_width="36dp"
+                    app:tint="@color/primary"
+                    android:layout_height="36dp"
+                    android:padding="6dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_mail"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/mail"/>
+
+                <ImageView
+                    android:id="@+id/btnLinkedin2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/linkedin1"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/share"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="24dp"
+            android:elevation="6dp"
+            app:cardElevation="4dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ankit1imgProfile"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ankitkumar"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="@color/primary"
+                    app:civ_border_width="1dp"
+                    android:contentDescription="@string/profile_image" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ankit Kumar"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Venue Management"
+                        android:textAllCaps="true"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/orbitronregular"
+                        android:textColor="@color/persianblue"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        tools:ignore="SmallSp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/btnCall3"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="6dp"
+                    android:src="@drawable/contact"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/call"/>
+
+                <ImageView
+                    android:id="@+id/btnMail3"
+                    android:layout_width="36dp"
+                    app:tint="@color/primary"
+                    android:layout_height="36dp"
+                    android:padding="6dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_mail"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/mail"/>
+
+                <ImageView
+                    android:id="@+id/btnLinkedin3"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/linkedin1"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/share"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="24dp"
+            android:elevation="6dp"
+            app:cardElevation="4dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ankit2imgProfile"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ankitbiswal"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="@color/primary"
+                    app:civ_border_width="1dp"
+                    android:contentDescription="@string/profile_image" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ankit Biswal"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Management"
+                        android:textAllCaps="true"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/orbitronregular"
+                        android:textColor="@color/persianblue"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        tools:ignore="SmallSp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/btnCall4"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="6dp"
+                    android:src="@drawable/contact"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/call"/>
+
+                <ImageView
+                    android:id="@+id/btnMail4"
+                    android:layout_width="36dp"
+                    app:tint="@color/primary"
+                    android:layout_height="36dp"
+                    android:padding="6dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_mail"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/mail"/>
+
+                <ImageView
+                    android:id="@+id/btnLinkedin4"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/linkedin1"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/share"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="24dp"
+            android:elevation="6dp"
+            app:cardElevation="4dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/krishanimgProfile"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/krishna"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="@color/primary"
+                    app:civ_border_width="1dp"
+                    android:contentDescription="@string/profile_image" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Krishna Mangaraj"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Venue Management"
+                        android:textAllCaps="true"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/orbitronregular"
+                        android:textColor="@color/persianblue"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        tools:ignore="SmallSp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/btnCall5"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="6dp"
+                    android:src="@drawable/contact"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/call"/>
+
+                <ImageView
+                    android:id="@+id/btnMail5"
+                    android:layout_width="36dp"
+                    app:tint="@color/primary"
+                    android:layout_height="36dp"
+                    android:padding="6dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_mail"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/mail"/>
+
+                <ImageView
+                    android:id="@+id/btnLinkedin5"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/linkedin1"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/share"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="24dp"
+            android:elevation="6dp"
+            app:cardElevation="4dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/BhaskarimgProfile"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/bhaskar"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="@color/primary"
+                    app:civ_border_width="1dp"
+                    android:contentDescription="@string/profile_image" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bhaskar Pandey"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Venue Management"
+                        android:textAllCaps="true"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/orbitronregular"
+                        android:textColor="@color/persianblue"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        tools:ignore="SmallSp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/btnCall6"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="6dp"
+                    android:src="@drawable/contact"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/call"/>
+
+                <ImageView
+                    android:id="@+id/btnMail6"
+                    android:layout_width="36dp"
+                    app:tint="@color/primary"
+                    android:layout_height="36dp"
+                    android:padding="6dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_mail"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/mail"/>
+
+                <ImageView
+                    android:id="@+id/btnLinkedin6"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/linkedin1"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/share"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="24dp"
+            android:elevation="6dp"
+            app:cardElevation="4dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/BasundharaimgProfile"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="@string/profile_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/basundhara"
+                    app:civ_border_color="@color/primary"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Basundhara Jadav"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Venue Management"
+                        android:textAllCaps="true"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/orbitronregular"
+                        android:textColor="@color/persianblue"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        tools:ignore="SmallSp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/btnCall7"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="6dp"
+                    android:src="@drawable/contact"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/call"/>
+
+                <ImageView
+                    android:id="@+id/btnMail7"
+                    android:layout_width="36dp"
+                    app:tint="@color/primary"
+                    android:layout_height="36dp"
+                    android:padding="6dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_mail"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/mail"/>
+
+                <ImageView
+                    android:id="@+id/btnLinkedin7"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/linkedin1"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/share"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="24dp"
+            android:elevation="6dp"
+            app:cardElevation="4dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/sindhujaimgProfile"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/sindhuja"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="@color/primary"
+                    app:civ_border_width="1dp"
+                    android:contentDescription="@string/profile_image" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sindhuja Gudla"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Venue Management"
+                        android:textAllCaps="true"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/orbitronregular"
+                        android:textColor="@color/persianblue"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        tools:ignore="SmallSp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/btnCall8"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="6dp"
+                    android:src="@drawable/contact"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/call"/>
+
+                <ImageView
+                    android:id="@+id/btnMail8"
+                    android:layout_width="36dp"
+                    app:tint="@color/primary"
+                    android:layout_height="36dp"
+                    android:padding="6dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_mail"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/mail"/>
+
+                <ImageView
+                    android:id="@+id/btnLinkedin8"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    app:tint="@color/primary"
+                    android:padding="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/linkedin1"
+                    android:background="@drawable/icon_bg"
+                    android:contentDescription="@string/share"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>
